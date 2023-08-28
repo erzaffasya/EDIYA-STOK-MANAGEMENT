@@ -1,31 +1,45 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
- <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html lang="en">
+
 <head>
     @include('landingpage.partials.head')
-  </head>
-  <body>
-    <div class="cs_preloader cs_accent_color cs_white_bg">
-      <div class="cs_preloader bg-white d-flex justify-content-center align-items-center">
-        <div class="cs_preloader_in">
-          <img src="{{asset('tlandingpage/assets/img/favicon.png')}}" alt="Logo">
-        </div>
-      </div>
-    </div>
-    <!-- Start Header Section -->
-    <header class="cs_site_header cs_style_1 cs_sticky_header cs_site_header_full_width">
-      @include('landingpage.partials.header')
-    </header>
-    <!-- End Header Section -->
+</head>
 
-    <!-- Start Hero -->
-    {{$slot}}
-    <!-- End Blog Section -->
-    <!-- Start Footer -->
-    <footer class="cs_footer background-filled text-white" data-src="{{asset('tlandingpage/assets/img/footer_bg.jpeg')}}">
-      @include('landingpage.partials.footer')
-    </footer>
+<body class="double-diagonal dark">
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="logopreloader">
+            <img src="http://via.placeholder.com/159x28" alt="logo">
+        </div>
+        <div class="loader" id="loader"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+       <header class="header">
+            @include('landingpage.partials.header')
+       </header>
+        <!-- Header Ends -->
+
+        {{ $slot }}
+
+        <!-- Footer Section Starts -->
+            @include('landingpage.partials.footer')
+        <!-- Footer Section Ends -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper">
+            <p id="back-top">
+                <a href="#top"><span></span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
 
     @include('landingpage.partials.scripts')
-  </body>
+
+
+</body>
+
 </html>

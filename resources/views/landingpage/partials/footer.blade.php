@@ -1,66 +1,108 @@
-<div class="container">
-    <div class="cs_footer_main cs_pt_30 cs_pb_30">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="cs_footer_item cs_pt_20 cs_pb_20">
-                    <div class="cs_text_widget">
-                        @if ($getProfil)
-                            <p>{!! $getProfil->profil !!}</p>
-                        @endif
+<footer class="footer top-logos">
+            <!-- Footer Top Area Starts -->
+            <div class="container top-footer">
+                <div class="row">
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <h4>Amira</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="pricing.html">pricing</a></li>
+								<li><a href="portfolio-3-columns.html">portfolio</a></li>
+                                <li><a href="blog-right-sidebar.html">Blog</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- <div class="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5">
-              <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-dribbble"></i></a>
-            </div> -->
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <h4>Support</h4>
+                        <div class="menu">
+                            <ul>
+								<li><a href="contact.html">Contact</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="terms-of-services.html">Terms of Services</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                        <h4>Contact US</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><span><i class="fa fa-envelope-open"></i> contact@website.com</span></li>
+                                <li><span><i class="fa fa-phone"></i> 00216 21 184 010</span></li>
+                                <li><span><i class="fa fa-map-marker"></i> London, England</span></li>
+                                <li><span><i class="fa fa-clock-o"></i> mon-sat 08am &#x21FE; 05pm</span></li>
+                                <li><span><i class="fa fa-skype"></i> amira.skype</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-12 col-md-4">
+                        <!-- Facts Starts -->
+                        <div class="facts-footer">
+                            <div>
+                                <h5>77,991</h5>
+                                <span>projects</span>
+                            </div>
+                            <div>
+                                <h5>80,217</h5>
+                                <span>hours work</span>
+                            </div>
+                            <div>
+                                <h5>1,253</h5>
+                                <span>offices</span>
+                            </div>
+                            <div>
+                                <h5>17,361</h5>
+                                <span>clients</span>
+                            </div>
+                        </div>
+                        <!-- Facts Ends -->
+                        <hr>
+                        <!-- Social Media Links Starts -->
+                        <div class="social-icons">
+                            <ul class="social">
+                                <li>
+                                    <a class="twitter" href="#" title="twitter"></a>
+                                </li>
+                                <li>
+                                    <a class="facebook" href="#" title="facebook"></a>
+                                </li>
+                                <li>
+                                    <a class="google" href="#" title="google"></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#" title="linkedin"></a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="#" title="youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social Media Links Ends -->
+                    </div>
+                    <!-- Footer Widget Ends -->
                 </div>
-            </div>
-            <div class="col-lg-4 offset-lg-1">
-                <div class="cs_footer_item cs_pt_20 cs_pb_20">
-                    <h2 class="cs_widget_title text-white cs_fs_22 cs_mb_22">Quick Link</h2>
-                    <ul class="cs_menu_widget text-uppercase">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="{{url('about')}}">About</a></li>
-                        <li><a href="{{url('contact')}}">Contact</a></li>
-                        <li><a href="{{url('career')}}">Career</a></li>
-                        <li><a href="{{url('member')}}">Our Member</a></li>
-                        @foreach ($getKategoriProduk as $item)
-                            <li><a href="{{ route('landingpage.business', $item->slug) }}">{{ $item->judul }}</a></li>
-                        @endforeach
-                        <!-- <li><a href="blog-list-with-sidebar.html">Blog</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="contact.html">Contact</a></li> -->
-                    </ul>
+                <!-- Footer Bottom Area Starts -->
+                <div class="bottom-footer">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Copyright Text Starts -->
+                            <p class="text-center">Copyright © 2023 Ediya All Rights Reserved | Created with Love by <a href="https://themeforest.net/user/celtano" target="_blank">lorem</a></p>
+                            <!-- Copyright Text Ends -->
+                        </div>
+                    </div>
                 </div>
+                <!-- Footer Bottom Area Ends -->
             </div>
-            <div class="col-lg-3">
-                <div class="cs_footer_item cs_pt_20 cs_pb_20">
-                    <div class="cs_newsletter cs_style_1">
-                        <h2 class="cs_newsletter_title text-white cs_fs_22 cs_mb_9">Get In Touch</h2>
-                        @if ($getProfil)
-                            <p>{!! $getProfil->alamat !!}</p>
-                            <p>Phone: <a href="tel:+{{ $getProfil->phone }}">+{{ $getProfil->phone }}</a></p>
-                            <p>Mobile: <a href="https://wa.me/{{ $getProfil->mobile }}">+{{ $getProfil->mobile }}</a>
-                            </p>
-                            <p>Email: <a href="mailto:{{ $getProfil->email }}">{{ $getProfil->email }}</a></p>
-                        @endif
+            <!-- Footer Top Area Ends -->
 
-                        <!-- <p class="cs_newsletter_subtitle cs_mb_26"> At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit. </p>
-              <form action="#" class="cs_newsletter_form position-relative">
-                <input type="email" class="cs_newsletter_input text-white cs_fs_14 cs_rounded_5 border-0 w-100 cs_pt_10" placeholder="Enter your mail">
-                <button class="cs_newsletter_btn cs_fs_14 cs_rounded_5 cs_transition_4 bg-accent position-absolute text-uppercase">
-                  <span>Go</span>
-                </button>
-              </form> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="cs_copyright text-center cs_fs_124 cs_lh_lg cs_pt_36 cs_pb_36">
-    <div class="container">
-        <p class="m-0">Copyright © 2023 <a href="/">Elang Mandiri Sakti</a>. All rights reserved.</p>
-    </div>
-</div>
+        </footer>
