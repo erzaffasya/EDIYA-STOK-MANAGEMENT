@@ -14,6 +14,6 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('tlandingpage/assets/css/skins/yellow.css') }}" />
 
 <!-- Revolution Slider CSS Files -->
-<link rel="stylesheet" type="text/css" href="{{ asset('tlandingpage/assets/css/revolution/settings.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('tlandingpage/assets/js/plugins/revolution/css/settings.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('tlandingpage/assets/js/plugins/revolution/css/layers.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('tlandingpage/assets/js/plugins/revolution/css/navigation.css') }}" />

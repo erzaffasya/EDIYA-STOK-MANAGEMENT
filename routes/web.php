@@ -17,5 +17,10 @@ Route::get('/', function () {
     return view('landingpage.index');
 });
 
+//make route for admin page
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
+
 require __DIR__ . '/auth.php';
 

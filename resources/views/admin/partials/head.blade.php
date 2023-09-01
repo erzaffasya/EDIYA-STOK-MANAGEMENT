@@ -1,31 +1,49 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<meta name="description" content="POS - Bootstrap Admin Template">
-<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive">
-<meta name="author" content="Dreamguys - Bootstrap Admin Template">
-<meta name="robots" content="noindex, nofollow">
-<title>Dashboard - Elang Mandiri Sakti</title>
+<meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{{asset('tlandingpage/assets/img/logo.png')}}">
+    <title>Dashboard - Analytics | Materialize - Material Design HTML Admin Template</title>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/css/bootstrap.min.css')}}">
+    <meta name="description" content="" />
 
-<!-- animation CSS -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/css/animate.css')}}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{asset('tadmin/assets/img/favicon/favicon.ico')}}" />
 
-<!-- Datatable CSS -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/css/dataTables.bootstrap4.min.css')}}">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
+      rel="stylesheet" />
 
-<!-- Fontawesome CSS -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/plugins/fontawesome/css/fontawesome.min.css')}}">
-<link rel="stylesheet" href="{{asset('tadmin/assets/plugins/fontawesome/css/all.min.css')}}">
+    <!-- Icons -->
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/fonts/materialdesignicons.css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/fonts/fontawesome.css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/fonts/flag-icons.css')}}" />
 
-<link rel="stylesheet" href="{{asset('tadmin/assets/plugins/select2/css/select2.min.css')}}">
-<!-- Main CSS -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/css/style.css')}}">
+    <!-- Menu waves for no-customizer fix -->
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/node-waves/node-waves.css')}}" />
 
-<link rel="preload" href="{{asset('tadmin/assets/plugins/fontawesome/webfonts/fa-solid-900.woff2')}}" as="font" type="font/woff2" crossorigin="anonymous">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/css/rtl/theme-default.css')}}" class="template-customizer-theme-css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/css/demo.css')}}" />
 
-<link rel="preload" href="{{asset('tadmin/assets/plugins/fontawesome/webfonts/fa-regular-400.woff2')}}" as="font" type="font/woff2" crossorigin="anonymous">
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/typeahead-js/typeahead.css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/apex-charts/apex-charts.css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/swiper/swiper.css')}}" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/css/pages/cards-statistics.css')}}" />
+    <link rel="stylesheet" href="{{asset('tadmin/assets/vendor/css/pages/cards-analytics.css')}}" />
+
+    <!-- Helpers -->
+    <script src="{{asset('tadmin/assets/vendor/js/helpers.js')}}"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="{{asset('tadmin/aseets/vendor/js/template-customizer.js')}}"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{{asset('tadmin/assets/js/config.js')}}"></script>

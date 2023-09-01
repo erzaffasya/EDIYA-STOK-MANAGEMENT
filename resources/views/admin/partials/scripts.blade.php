@@ -1,35 +1,22 @@
-    <!-- /Main Wrapper -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="{{asset('tadmin/assets/vendor/libs/jquery/jquery.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/popper/popper.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/js/bootstrap.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/node-waves/node-waves.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/hammer/hammer.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/i18n/i18n.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/typeahead-js/typeahead.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/js/menu.js')}}"></script>
 
-    <!-- jQuery -->
-    <script src="{{ asset('tadmin/assets/js/jquery-3.6.0.min.js') }}"></script>
+    <!-- endbuild -->
 
-    <!-- Feather Icon JS -->
-    <script src="{{ asset('tadmin/assets/js/feather.min.js') }}"></script>
+    <!-- Vendors JS -->
+    <script src="{{asset('tadmin/assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
+    <script src="{{asset('tadmin/assets/vendor/libs/swiper/swiper.js')}}"></script>
 
-    <!-- Slimscroll JS -->
-    <script src="{{ asset('tadmin/assets/js/jquery.slimscroll.min.js') }}"></script>
+    <!-- Main JS -->
+    <script src="{{asset('tadmin/assets/js/main.js')}}"></script>
 
-    <!-- Datatable JS -->
-    <script src="{{ asset('tadmin/assets/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('tadmin/assets/js/dataTables.bootstrap4.min.js') }}"></script>
-
-    <!-- Bootstrap Core JS -->
-    <script src="{{ asset('tadmin/assets/js/bootstrap.bundle.min.js') }}"></script>
-
-    <!-- Custom JS -->
-    <script src="{{ asset('tadmin/assets/js/script.js') }}"></script>
-
-    <script src="https://cdn.tiny.cloud/1/pbt8hv1pilzu9hy3yh33hvz7bnbdtjda34vxywwge56tcjou/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-      tinymce.init({
-        selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
-        plugins: 'code table lists',
-        plugins: "link",
-        toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
-      });
-    </script>
-
-    <!-- <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3IzKovEv9pbMJ-pLfP9cO7nTSJXIDPDU&libraries=places&callback=initMap"
-        async defer></script> -->
-    @stack('scripts')
+    <!-- Page JS -->
+    <script src="{{asset('tadmin/assets/js/dashboards-analytics.js')}}"></script>
