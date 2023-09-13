@@ -23,14 +23,7 @@ class LandingpageController extends Controller
 {
     public function index()
     {
-        $HeroText = HeroText::all();
-        $Benefit = Benefit::get()->first();
-        $BenefitDetail = BenefitDetail::all();
-        $Hero = Hero::orderBy('urut')->get();
-        $TentangSingkat = TentangSingkat::find(1);
-        $Partner = Partner::all();
-        $KategoriProduk = KategoriProduk::all();
-        return view('landingpage.index',compact('HeroText','Benefit','BenefitDetail', 'Hero', 'TentangSingkat','Partner', 'KategoriProduk'));
+        return view('landingpage.index');
     }
 
     public function member(){

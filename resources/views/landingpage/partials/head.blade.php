@@ -1,10 +1,10 @@
 <!-- Meta Tags -->
 <meta charset="utf-8">
-<title>Ediya</title>
+<title>Ediya - Stock Management</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="http://via.placeholder.com/30x30">
+<link rel="shortcut icon" href="{{ asset('tlandingpage/assets/img/ediya.png') }}" style="width: 30px;">
 
 <!-- Template CSS Files -->
 <link rel="stylesheet" type="text/css" href="{{ asset('tlandingpage/assets/css/bootstrap.min.css') }}" />

@@ -15,78 +15,126 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('tlandingpage/assets/img/logo.png') }}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('tadmin/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('tlandingpage/assets/css/bootstrap.min.css') }}">
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="{{ asset('tadmin/assets/plugins/fontawesome/css/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('tadmin/assets/plugins/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('tlandingpage/assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('tlandingpage/assets/plugins/fontawesome/css/all.min.css') }}">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="{{ asset('tadmin/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('tlandingpage/assets/css/style.css') }}">
 
 </head>
 
-<body class="account-page">
-
-    <!-- Main Wrapper -->
-    <div class="main-wrapper">
-        <div class="account-content">
-            <div class="login-wrapper">
-                <div class="login-content">
-                    <div class="login-userset">
-                        <form action="{{ route('login') }}" method="post">
-                            @csrf
-                            <div class="login-logo logo-normal">
-                                <img src="{{ asset('tlandingpage/assets/img/logo-large.jpeg') }}" alt="img">
-                            </div>
-                            <a href="index.html" class="login-logo logo-white">
-                                <img src="{{ asset('tadmin/assets/img/logo-white.png') }}" alt="">
-                            </a>
-                            <div class="login-userheading">
-                                <h3>Sign In</h3>
-                                <h4>Please login to your account</h4>
-                            </div>
-                            <div class="form-login">
-                                <label>Email</label>
-                                <div class="form-addons">
-                                    <input name="email" type="text" placeholder="Enter your email address">
-                                    <img src="{{ asset('tadmin/assets/img/icons/mail.svg') }}" alt="img">
-                                </div>
-                            </div>
-                            <div class="form-login">
-                                <label>Password</label>
-                                <div class="pass-group">
-                                    <input name="password" type="password" class="pass-input"
-                                        placeholder="Enter your password">
-                                    <span class="fas toggle-password fa-eye-slash"></span>
-                                </div>
-                            </div>
-                            <div class="form-login">
-                                <button type="submit" class="btn btn-login" style="background-color: #079bf0; color: #000; border-color: #079bf0;">Sign In</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="login-img">
-                    <img src="{{ asset('tadmin/assets/img/login-new.jpeg') }}" alt="img">
-                </div>
-            </div>
+<body class="double-diagonal dark auth-page">
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="logopreloader">
+            <img src="http://via.placeholder.com/159x28" alt="logo">
         </div>
+        <div class="loader" id="loader"></div>
     </div>
-    <!-- /Main Wrapper -->
+    <!-- Preloader Ends -->
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <div class="container-fluid user-auth">
+			<div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+				<!-- Logo Starts -->
+				<a class="logo" href="index-kenburns.html">
+					<img class="img-responsive" src="http://via.placeholder.com/159x28" alt="logo">
+				</a>
+				<!-- Logo Ends -->
+				<!-- Slider Starts -->
+				<div id="carousel-testimonials" class="carousel slide carousel-fade" data-ride="carousel">
+					<!-- Indicators Starts -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-testimonials" data-slide-to="1"></li>
+						<li data-target="#carousel-testimonials" data-slide-to="2"></li>
+					</ol>
+					<!-- Indicators Ends -->
+					<!-- Carousel Inner Starts -->
+					<div class="carousel-inner">
+						<!-- Carousel Item Starts -->
+						<div class="item active item-1">
+							<div>
+								<blockquote>
+									<p>Amira's Team Was Great To Work With And Interpreted Our Needs Perfectly.</p>
+									<footer><span>Lucy Smith</span>, England</footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- Carousel Item Ends -->
+						<!-- Carousel Item Starts -->
+						<div class="item item-2">
+							<div>
+								<blockquote>
+									<p>The Team Is Endlessly Helpful, Flexible And Always Quick To Respond, Thanks Amira!</p>
+									<footer><span>Rawia Chniti</span>, Russia</footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- Carousel Item Ends -->
+						<!-- Carousel Item Starts -->
+						<div class="item item-3">
+							<div>
+								<blockquote>
+									<p>We Are So Appreciative Of Their Creative Efforts, And Love Our New Site!, millions of thanks Amira!</p>
+									<footer><span>Mario Verratti</span>, Spain</footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- Carousel Item Ends -->
+					</div>
+					<!-- Carousel Inner Ends -->
+				</div>
+				<!-- Slider Ends -->
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<!-- Logo Starts -->
+				<a class="visible-xs" href="index-kenburns.html">
+					<img class="img-responsive mobile-logo" src="http://via.placeholder.com/159x28" alt="logo">
+				</a>
+				<!-- Logo Ends -->
+				<div class="form-container">
+					<div>
+						<!-- Main Heading Starts -->
+					<div class="text-center top-text">
+						<h1><span>member</span> login</h1>
+						<p>great to have you back!</p>
+					</div>
+					<!-- Main Heading Ends -->
+						<!-- Form Starts -->
+						<form class="custom-form">
+							<!-- Input Field Starts -->
+							<div class="form-group">
+								<input class="form-control" name="email" id="email" placeholder="EMAIL" type="email" required>
+							</div>
+							<!-- Input Field Ends -->
+							<!-- Input Field Starts -->
+							<div class="form-group">
+								<input class="form-control" name="password" id="password" placeholder="PASSWORD" type="password" required>
+							</div>
+							<!-- Input Field Ends -->
+							<!-- Submit Form Button Starts -->
+							<div class="form-group">
+								<button class="custom-button login" type="submit">login</button>
+								<p class="text-center">don't have an account ? <a href="register.html">register now</a>
+							</div>
+							<!-- Submit Form Button Ends -->
+						</form>
+						<!-- Form Ends -->
+					</div>
+				</div>
+				<!-- Copyright Text Starts -->
+				<p class="text-center copyright-text">Copyright © 2023 Ediya All Rights Reserved</p>
+				<!-- Copyright Text Ends -->
+			</div>
+		</div>
+    </div>
+    <!-- Wrapper Ends -->
 
-    <!-- jQuery -->
-    <script src="{{ asset('tadmin/assets/js/jquery-3.6.0.min.js') }}"></script>
-
-    <!-- Feather Icon JS -->
-    <script src="{{ asset('tadmin/assets/js/feather.min.js') }}"></script>
-
-    <!-- Bootstrap Core JS -->
-    <script src="{{ asset('tadmin/assets/js/bootstrap.bundle.min.js') }}"></script>
-
-    <!-- Custom JS -->
-    <script src="{{ asset('tadmin/assets/js/script.js') }}"></script>
-
+    @include('landingpage.partials.scripts')
 </body>
 
 </html>

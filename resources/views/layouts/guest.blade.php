@@ -9,7 +9,7 @@
     <!-- Preloader Starts -->
     <div class="preloader" id="preloader">
         <div class="logopreloader">
-            <img src="http://via.placeholder.com/159x28" alt="logo">
+            <!-- <img src="{{ asset('tlandingpage/assets/img/ediya.png') }}" alt="logo" style="width: 40px;"> -->
         </div>
         <div class="loader" id="loader"></div>
     </div>
