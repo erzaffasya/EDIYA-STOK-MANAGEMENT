@@ -20,3 +20,5 @@
 
     <!-- Page JS -->
     <script src="{{asset('tadmin/assets/js/dashboards-analytics.js')}}"></script>
+
+    <script src="{{asset('tadmin/assets/vendor/js/template-customizer.js')}}"></script>

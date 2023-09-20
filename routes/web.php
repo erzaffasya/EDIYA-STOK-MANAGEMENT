@@ -1,9 +1,13 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\BenefitController;
+use App\Http\Controllers\HeroController;
 use App\Http\Controllers\LandingpageController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\VideoPromoController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +27,16 @@ Route::get('/register', [RegisteredUserController::class, 'create'])->name('regi
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('register.create');
 
 //make route for admin page
-Route::get('/admin', function () {
+Route::get('/dashboard', function () {
     return view('admin.dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+//make route for admin page
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+    Route::resource('hero', HeroController::class);
+    Route::resource('about', AboutController::class);
+    Route::resource('benefit', BenefitController::class);
+    Route::resource('videopromo', VideoPromoController::class);
 });
 
 require __DIR__ . '/auth.php';

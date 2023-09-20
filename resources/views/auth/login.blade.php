@@ -105,7 +105,8 @@
 					</div>
 					<!-- Main Heading Ends -->
 						<!-- Form Starts -->
-						<form class="custom-form">
+						<form class="custom-form"  action="{{ route('login') }}" method="post">
+                            @csrf
 							<!-- Input Field Starts -->
 							<div class="form-group">
 								<input class="form-control" name="email" id="email" placeholder="EMAIL" type="email" required>

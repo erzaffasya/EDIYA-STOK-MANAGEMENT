@@ -13,8 +13,6 @@
     <script src="{{ asset('tlandingpage/assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
     <script src="{{ asset('tlandingpage/assets/js/plugins/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
 
-
-
     <!-- Revolution Slider Extensions -->
     <script src="{{asset('tlandingpage/assets/js/plugins/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
     <script src="{{asset('tlandingpage/assets/js/plugins/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
@@ -28,5 +26,6 @@
 
     <!-- Main JS Initialization File -->
     <script src="{{ asset('tlandingpage/assets/js/custom.js')}}"></script>
+
  @stack('scripts')
 
