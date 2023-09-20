@@ -12,7 +12,7 @@
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">EDIYA STOCK MANAGEMENT
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">EDIYA STOCK
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -32,7 +32,7 @@
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">Temukan Peluang dengan Mudah
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">KAMU BISA
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -56,7 +56,7 @@
                             </div>
 
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">Platform Terbaik untuk Manajemen Saham
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">KAMI MENAWARKAN
                             </div>
 
                             <!-- LAYER NR. 3 -->
@@ -140,7 +140,28 @@
         </section>
         <!-- About Section Ends -->
         <!-- Video Section Starts -->
-
+        <section class="videopromotion">
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h1><span>Video</span> Promo</h1>
+                        <h4>Made with love for you</h4>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <p class="text-center">See Amira like you've never seen it before! Watch our new promo video,<br> and discover just what an Amira membership can do for you!</p>
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" href="https://www.youtube.com/watch?v=0gv7OC9L2s8"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
         <!-- Video Section Ends -->
         <!-- Services Section Starts -->
         <section id="layanan" class="services">
@@ -509,6 +530,105 @@
         <!-- Blog Section Starts -->
 
         <!-- Blog Section Ends -->
+        <section class="blog">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Blog</span> Posts</h1>
+                    <h4>Latest Articles</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-comments" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+                    <!-- Article Starts -->
+                    <div class="col-sm-4 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="http://via.placeholder.com/720x477" alt="img"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="blog-post.html">how to be a good freelancer ?</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>18</span>
+                                <span>AUG</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <a class="custom-button" href="blog-post.html">Read more</a>
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-4 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="http://via.placeholder.com/720x477" alt="img"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="blog-post.html">Collaboration with Envato</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>23</span>
+                                <span>JUN</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <a class="custom-button" href="blog-post.html">Read more</a>
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-4 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="blog-post.html"><img class="img-responsive" src="http://via.placeholder.com/720x477" alt="img"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="blog-post.html">why themeforest is best ?</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>01</span>
+                                <span>JAN</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <a class="custom-button" href="blog-post.html">Read more</a>
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
         <!-- Call To Action Section Starts -->
 
         <!-- facts Section Ends -->

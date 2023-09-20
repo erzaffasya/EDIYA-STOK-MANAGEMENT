@@ -1,7 +1,69 @@
 <x-app-layout>
-        <!-- Menu -->
-        
-        <!-- / Menu -->
+
+<div class="content-wrapper">
+            <!-- Menu -->
+            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
+              <div class="container-xxl d-flex h-100">
+                <ul class="menu-inner">
+                  <!-- Dashboards -->
+                  <li class="menu-item active">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                      <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
+                      <div data-i18n="Dashboards">Dashboards</div>
+                    </a>
+                    <ul class="menu-sub">
+
+                      <li class="menu-item">
+                      <a href="{{ route('hero.index') }}" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-chart-donut"></i>
+                          <div data-i18n="Hero">Hero</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="{{route('about.index')}}" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-chart-donut"></i>
+                          <div data-i18n="Tentang Kami">Tentang Kami</div>
+                        </a>
+                      </li>
+                      <li class="menu-item active">
+                        <a href="index.html" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-chart-timeline-variant"></i>
+                          <div data-i18n="OUR MAG">OUR MAG</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="{{route('benefit.index')}}" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-truck-outline"></i>
+                          <div data-i18n="Benefit">Benefit</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                      <a href="{{route('videopromo.index')}}" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+                          <div data-i18n="Video Promo">Video Promo</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="app-academy-dashboard.html" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+                          <div data-i18n="Testimoni">Testimoni</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="app-academy-dashboard.html" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+                          <div data-i18n="Pilihan Program">Pilihan Program</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="app-academy-dashboard.html" class="menu-link">
+                          <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+                          <div data-i18n="Blog">Blog</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
 
         <!-- Content -->
 
