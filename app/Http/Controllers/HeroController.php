@@ -22,9 +22,6 @@ class HeroController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            // 'ft' => 'required'
-        ]);
 
         if ($request->hasFile('foto')) {
             $extention = $request->foto->extension();
@@ -93,7 +90,7 @@ class HeroController extends Controller
 
     public function destroy($id)
     {
-        $Hero = Hero::findOrFail($id);
+        $Hero = Hero::find($id);
         Storage::delete("public/Hero/$Hero->foto");
         $Hero->delete();
         return redirect()->route('hero.index')

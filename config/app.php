@@ -161,7 +161,14 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        App\Providers\HeroDataServiceProvider::class,
+        App\Providers\BenefitDataServiceProvider::class,
+        App\Providers\AboutDataServiceProvider::class,
+        App\Providers\VideopromoDataServiceProvider::class,
+        App\Providers\TestimonialDataServiceProvider::class,
+        App\Providers\PilihanProgramDataServiceProvider::class,
+        App\Providers\BlogDataServiceProvider::class,
+        App\Providers\LayananDataServiceProvider::class,
         /*
          * Package Service Providers...
          */

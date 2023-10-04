@@ -4,11 +4,14 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\BenefitController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HeroController;
 use App\Http\Controllers\LandingpageController;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PilihanProgramController;
+use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\VideoPromoController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LayananController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,6 +40,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('about', AboutController::class);
     Route::resource('benefit', BenefitController::class);
     Route::resource('videopromo', VideoPromoController::class);
+    Route::resource('testimonial', TestimonialController::class);
+    Route::resource('pilihanprogram', PilihanProgramController::class);
+    Route::resource('blog', BlogController::class);
+    Route::resource('layanan', LayananController::class);
 });
 
 require __DIR__ . '/auth.php';
