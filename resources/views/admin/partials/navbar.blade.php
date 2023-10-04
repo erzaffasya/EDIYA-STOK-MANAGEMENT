@@ -5,16 +5,16 @@
                 <span class="app-brand-text demo menu-text fw-bold">Ediya Admin Page</span>
               </a>
 
-              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
                 <i class="mdi mdi-close align-middle"></i>
-              </a>
-            </div>
+            </a>
+        </div>
 
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+        <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                 <i class="mdi mdi-menu mdi-24px"></i>
-              </a>
-            </div>
+            </a>
+        </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -37,17 +37,14 @@
                   </ul>
                 </li>
                 <!--/ User -->
-              </ul>
-            </div>
+            </ul>
+        </div>
 
-            <!-- Search Small Screens -->
-            <div class="navbar-search-wrapper search-input-wrapper container-xxl d-none">
-              <input
-                type="text"
-                class="form-control search-input border-0"
-                placeholder="Search..."
+        <!-- Search Small Screens -->
+        <div class="navbar-search-wrapper search-input-wrapper container-xxl d-none">
+            <input type="text" class="form-control search-input border-0" placeholder="Search..."
                 aria-label="Search..." />
-              <i class="mdi mdi-close search-toggler cursor-pointer"></i>
-            </div>
-          </div>
-        </nav>
+            <i class="mdi mdi-close search-toggler cursor-pointer"></i>
+        </div>
+    </div>
+</nav>
