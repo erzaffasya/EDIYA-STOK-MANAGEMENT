@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\BenefitController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BlogDetailController;
 use App\Http\Controllers\HeroController;
 use App\Http\Controllers\LandingpageController;
 use App\Http\Controllers\PilihanProgramController;
@@ -45,6 +46,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('blog', BlogController::class);
     Route::resource('layanan', LayananController::class);
 });
+
+Route::get('/blog-detail/{slug}', [BlogDetailController::class, 'index'])->name('landingpage.blog-detail');
 
 require __DIR__ . '/auth.php';
 

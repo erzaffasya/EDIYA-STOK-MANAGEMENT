@@ -346,7 +346,7 @@
                                     <span>{{ $post->created_at->format('M') }}</span>
                                 </div>
                                 <!-- Post Date Ends -->
-                                <a class="custom-button" href="{{ route('blog.show', $post->id) }}">Read more</a>
+                                <a class="custom-button" href="{{ route('landingpage.blog-detail', ($post->id)) }}">Read more</a>
                                 <!-- Article Content Ends -->
                             </div>
                         </div>
