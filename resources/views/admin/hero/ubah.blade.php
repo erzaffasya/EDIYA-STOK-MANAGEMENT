@@ -1,60 +1,122 @@
 <x-app-layout>
-    <div class="content">
-        <div class="page-header">
-            <div class="page-title">
-                <h4>Hero</h4>
-                <h6>Ubah Data Hero</h6>
-            </div>
-        </div>
-        <!-- /add -->
-        <div class="card">
-            <div class="card-body">
-                <form method="post" action="{{ route('hero.update', $Hero->id) }}" enctype="multipart/form-data">
-                    @csrf
-                    @method('PUT')
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6 col-12">
-                            <div class="form-group">
-                                <label>Title</label>
-                                <input name="title" value="{{$Hero->title}}" type="text">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="py-3 mb-4">
+            <span class="text-muted fw-light">Forms/</span>
+            Ubah Data Hero
+        </h4>
+        <div class="row">
+            <div class="col-xxl">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form method="post" action="{{ route('hero.update', $Hero->id) }}" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Title</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span id="basic-icon-default-fullname2" class="input-group-text">
+                                            <i class="mdi mdi-format-title"></i>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="basic-icon-default-fullname"
+                                            placeholder="Masukan Title"
+                                            name="title"
+                                            aria-label="Masukan Title"
+                                            aria-describedby="basic-icon-default-fullname2"
+                                            value="{{$Hero->title}}"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-12">
-                            <div class="form-group">
-                                <label>Judul</label>
-                                <input name="judul" value="{{$Hero->judul}}" type="text">
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Judul</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span id="basic-icon-default-company2" class="input-group-text">
+                                            <i class="mdi mdi-subtitles-outline"></i>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            id="basic-icon-default-company"
+                                            class="form-control"
+                                            placeholder="Masukan Judul"
+                                            name="judul"
+                                            aria-label="Masukan Judul"
+                                            aria-describedby="basic-icon-default-company2"
+                                            value="{{$Hero->judul}}"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-6 col-sm-6 col-12">
-                            <div class="form-group">
-                                <label>Urut</label>
-                                <input name="urut" value="{{$Hero->urut}}" type="number">
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-email">urut</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span class="input-group-text"><i class="mdi mdi-view-sequential-outline"></i></span>
+                                        <input
+                                            type="number"
+                                            id="basic-icon-default-email"
+                                            class="form-control"
+                                            name="urut"
+                                            placeholder="Masukan Urutan"
+                                            aria-label="Masukan Urutan"
+                                            aria-describedby="basic-icon-default-email2"
+                                            value="{{$Hero->urut}}"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-12">
-                            <div class="form-group">
-                                <label>Foto</label>
-                                <input name="foto" type="file">
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-phone">Foto</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span id="basic-icon-default-phone2" class="input-group-text">
+                                            <i class="mdi mdi-image-check-outline"></i>
+                                        </span>
+                                        <input
+                                            type="file"
+                                            id="basic-icon-default-phone"
+                                            class="form-control phone-mask"
+                                            name="foto"
+                                            placeholder="Masukan Foto"
+                                            aria-label="Masukan foto"
+                                            aria-describedby="basic-icon-default-phone2"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-12 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label>Deskripsi</label>
-                                <input name="deskripsi" value="{{$Hero->deskripsi}}" type="text">
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-message">Deskripsi</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span id="basic-icon-default-message2" class="input-group-text">
+                                            <i class="mdi mdi-message-outline"></i>
+                                        </span>
+                                        <input
+                                            id="basic-icon-default-message"
+                                            class="form-control"
+                                            name="deskripsi"
+                                            placeholder="Masukan Deskripsi"
+                                            aria-label="Masukan Deskripsi"
+                                            aria-describedby="basic-icon-default-message2"
+                                            value="{{$Hero->deskripsi}}"
+                                        ></input>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div class="col-lg-12">
-                            <button type="submit" class="btn btn-submit me-2">Submit</button>
-                            <a href="{{ route('hero.index') }}" class="btn btn-cancel">Cancel</a>
-                        </div>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-submit me-2">Submit</button>
+                                    <a href="{{ route('hero.index') }}" class="btn btn-cancel">Cancel</a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-        <!-- /add -->
     </div>
 </x-app-layout>
