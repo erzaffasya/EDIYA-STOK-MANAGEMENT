@@ -1,4 +1,5 @@
 <x-app-layout>
+    <!-- Content -->
 
 <div class="content-wrapper">
             <!-- Menu -->
@@ -1245,8 +1246,11 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
                 <p>Hello</p>
+
             </div>
+            <!-- Activity Timeline -->
         </div>
-        <!--/ Content -->
+    </div>
+    <!--/ Content -->
 
 </x-app-layout>
