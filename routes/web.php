@@ -26,8 +26,12 @@ use App\Http\Controllers\LayananController;
 
 Route::get('/', [LandingpageController::class, 'index'])->name('landingpage.index');
 
+Route::get('/', [LandingpageController::class, 'index'])->name('landingpage.index');
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register.create');
 
+Route::get('/chart', function () {
+    return view('admin.chart');
+})->name('admin.chart');
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('register.create');
 
 //make route for admin page
