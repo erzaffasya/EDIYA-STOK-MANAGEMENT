@@ -4,49 +4,39 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TestimonialModel;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
 class TestimonialController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $Testimonial =  TestimonialModel::all();
         return view('admin.testimonial.index', compact('Testimonial'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view ('admin.testimonial.tambah');
+        return view('admin.testimonial.tambah');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //make validation if has foto
         if ($request->hasFile('foto')) {
-            $extention = $request->foto->extension();
-            $file_name = time() . '.' . $extention;
+            $extension = $request->foto->extension();
+            $file_name = time() . '.' . $extension;
+            $directory_path = public_path('storage/Testimonial/');
+
+            if (!File::exists($directory_path)) {
+                File::makeDirectory($directory_path, $mode = 0777, true, true);
+            }
+
             $image = Image::make($request->file('foto'));
             $image->resize(720, null, function ($constraint) {
                 $constraint->aspectRatio();
             });
-            $image->save(public_path('storage/Testimonial/' . $file_name), 100);
+            $image->save($directory_path . $file_name, 100);
             $txt = "storage/Testimonial/" . $file_name;
         } else {
             $txt = null;
@@ -58,56 +48,36 @@ class TestimonialController extends Controller
             'nama' => $request->nama,
             'jabatan' => $request->jabatan,
             'urut' => $request->urut,
-
-            // dd(...$request->all())
         ]);
-        return redirect()->route('testimonial.index')->with('success', 'Data Testimonial Berhasil Ditambahkan!');;
+
+        return redirect()->route('testimonial.index')->with('success', 'Data Testimonial Berhasil Ditambahkan!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         return view('admin.testimonial.ubah', [
-            'Testimonial' => TestimonialModel::find($id)
+            'Testimonial' => TestimonialModel::find($id),
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-
         $Testimonial = TestimonialModel::findOrFail($id);
         $Testimonial->isi = $request->isi;
         $Testimonial->nama = $request->nama;
         $Testimonial->jabatan = $request->jabatan;
         $Testimonial->urut = $request->urut;
 
-        if($request->has("foto")) {
-            Storage::delete("public/Testimonial/$Testimonial->foto");
-            $extention = $request->foto->extension();
-            $file_name = time() . '.' . $extention;
+        if ($request->hasFile("foto")) {
+            $current_foto_path = $Testimonial->foto;
+            $extension = $request->foto->extension();
+            $file_name = time() . '.' . $extension;
+            $directory_path = public_path('storage/Testimonial/');
+
+            if (!File::exists($directory_path)) {
+                File::makeDirectory($directory_path, $mode = 0777, true, true);
+            }
+
             $txt = "storage/Testimonial/" . $file_name;
             $image = $request->file('foto');
             $image = Image::make($request->file('foto'));
@@ -116,20 +86,23 @@ class TestimonialController extends Controller
             });
             $image->save(public_path('storage/Testimonial/' . $file_name), 100);
             $Testimonial->foto = $txt;
+
+            if ($current_foto_path && File::exists(public_path($current_foto_path))) {
+                File::delete(public_path($current_foto_path));
+            }
         }
+
         $Testimonial->save();
-        return redirect()->route('testimonial.index')->with('success', 'Data Testimonial Berhasil Diubah!');;
+
+        return redirect()->route('testimonial.index')->with('success', 'Data Testimonial Berhasil Diubah!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        TestimonialModel::destroy($id);
-        return redirect()->route('testimonial.index')->with('success', 'Data Testimonial Berhasil Dihapus!');;
+        $Testimonial = TestimonialModel::find($id);
+        Storage::delete("public/Testimonial/$Testimonial->foto");
+        $Testimonial->delete();
+
+        return redirect()->route('testimonial.index')->with('success', 'Data Testimonial Berhasil Dihapus!');
     }
 }

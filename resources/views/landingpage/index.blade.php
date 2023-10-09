@@ -315,9 +315,9 @@
                 </div>
                 <!-- Divider Ends -->
                 <div class="row latest-posts-content">
+                    <!-- Article Starts -->
                     @foreach ($Blog as $post)
-                        <!-- Article Starts -->
-                        <div class="col-sm-4 col-md-4 col-xs-12">
+                    <div class="col-sm-4 col-md-4 col-xs-12">
                             <div class="latest-post">
                                 <!-- Featured Image Starts -->
                                 <a class="img-thumb" href="{{ route('blog.show', $post->id) }}">
@@ -327,12 +327,18 @@
                                 <!-- Article Content Starts -->
                                 <div class="post-body">
                                     <h4 class="post-title">
-                                        <a href="{{ route('blog.show', $post->id) }}">{{ $post->judul }}</a>
+                                        @php
+                                        $words = explode(' ', $post->judul);
+                                        $limit = 15;
+                                        $ellipsis = count($words) > $limit ? '...' : '';
+                                        $truncatedText = implode(' ', array_slice($words, 0, $limit)) . $ellipsis;
+                                        @endphp
+                                        <a href="{{ route('blog.show', $post->id) }}">{{ $truncatedText }}</a>
                                     </h4>
                                     <div class="post-text">
                                         @php
                                         $words = explode(' ', $post->isi);
-                                        $limit = 20; // Set your desired word limit here
+                                        $limit = 15;
                                         $ellipsis = count($words) > $limit ? '...' : '';
                                         $truncatedText = implode(' ', array_slice($words, 0, $limit)) . $ellipsis;
                                         @endphp
@@ -350,9 +356,9 @@
                                 <a class="custom-button" href="{{ route('landingpage.blog-detail', ($post->id)) }}">Read more</a>
                                 <!-- Article Content Ends -->
                             </div>
+                            @endforeach
                         </div>
                         <!-- Article Ends -->
-                    @endforeach
 </div>
 
                 <!-- Latest Blog Posts Ends -->
