@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Hero;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
@@ -23,14 +24,21 @@ class HeroController extends Controller
     public function store(Request $request)
     {
 
+
         if ($request->hasFile('foto')) {
-            $extention = $request->foto->extension();
-            $file_name = time() . '.' . $extention;
+            $extension = $request->foto->extension();
+            $file_name = time() . '.' . $extension;
+            $directory_path = public_path('storage/Hero/');
+
+            if (!File::exists($directory_path)) {
+                File::makeDirectory($directory_path, $mode = 0777, true, true);
+            }
+
             $image = Image::make($request->file('foto'));
             $image->resize(720, null, function ($constraint) {
                 $constraint->aspectRatio();
             });
-            $image->save(public_path('storage/Hero/' . $file_name), 100);
+            $image->save($directory_path . $file_name, 100);
             $txt = "storage/Hero/" . $file_name;
         } else {
             $txt = null;
@@ -46,7 +54,6 @@ class HeroController extends Controller
 
         return redirect()->route('hero.index')
             ->with('success', 'Hero Berhasil Ditambahkan');
-
     }
 
     public function show($id)
@@ -71,9 +78,15 @@ class HeroController extends Controller
         $Hero->urut = $request->urut;
 
         if ($request->has("foto")) {
-            Storage::delete("public/Hero/$Hero->foto");
+            $current_foto_path = $Hero->foto;
             $extention = $request->foto->extension();
             $file_name = time() . '.' . $extention;
+            $directory_path = public_path('storage/Hero/');
+
+            if (!File::exists($directory_path)) {
+                File::makeDirectory($directory_path, $mode = 0777, true, true);
+            }
+
             $txt = "storage/Hero/" . $file_name;
             $image = $request->file('foto');
             $image = Image::make($request->file('foto'));
@@ -82,7 +95,12 @@ class HeroController extends Controller
             });
             $image->save(public_path('storage/Hero/' . $file_name), 100);
             $Hero->foto = $txt;
+
+            if ($current_foto_path && File::exists(public_path($current_foto_path))) {
+                File::delete(public_path($current_foto_path));
+            }
         }
+
         $Hero->save();
         return redirect()->route('hero.index')
             ->with('success', 'Hero Berhasil Diubah');
