@@ -51,6 +51,14 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('layanan', LayananController::class);
 });
 
+Route::get('/hero-dt', [HeroController::class, 'data'])->name('hero.data');
+Route::get('hero/export/excel', [HeroController::class, 'exportExcel'])->name('hero.export.excel');
+Route::get('hero/export/pdf', [HeroController::class, 'exportPdf'])->name('hero.export.pdf');
+
+Route::get('/about-dt', [AboutController::class, 'data'])->name('about.data');
+
+Route::get('/layanan-dt', [LayananController::class, 'data'])->name('layanan.data');
+
 Route::get('/blog-detail/{slug}', [BlogDetailController::class, 'index'])->name('landingpage.blog-detail');
 
 require __DIR__ . '/auth.php';

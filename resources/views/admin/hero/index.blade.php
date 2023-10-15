@@ -1,62 +1,81 @@
 <x-app-layout>
-
-    <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-3 mb-4"><span class="text-muted fw-light">Tables /</span>  Hero</h4>
-              <a href="{{ route('hero.create') }}" class="btn btn-primary mb-4">Tambah Hero</a>
-
-              <!-- Striped Rows -->
+<div class="container-xxl flex-grow-1 container-p-y">
+              <!-- <h4 class="py-3 mb-4"><span class="text-muted fw-light">DataTables /</span> Basic</h4> -->
               <div class="card">
-                <div class="table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th>No</th>
-                        <th>Title</th>
-                        <th>Judul</th>
-                        <th>Urut</th>
-                        <th>Deskripsi</th>
-                        <th>Foto</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                            @foreach ($Hero as $item)
-                                <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $item->title }}</td>
-                                    <td>{{ $item->judul }}</td>
-                                    <td>{{ $item->urut }}</td>
-                                    <td>{{ $item->deskripsi }}</td>
-                                    <td>
-                                        <a href="javascript:void(0);" class="product-img">
-                                            <img src="{{ asset($item->foto) }}" alt="product" style="width: 200px;">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="{{ route('hero.edit', $item->id) }}"
-                                                ><i class="mdi mdi-pencil-outline me-1"></i> Edit</a
-                                            >
-                                            <form method="POST" action="{{ route('hero.destroy', $item->id) }}">
-                                                @csrf
-                                                @method('DELETE')
+                <div class="card-datatable table-responsive pt-0">
+                    <div class="card-header flex-column flex-md-row">
+                        <!-- <div class="head-label text-center">
+                            <h5 class="card-title mb-0">DataTables Hero</h5>
+                        </div> -->
+                        <div class="dt-action-buttons text-end pt-3 pt-md-0">
+                            <div class="dt-buttons">
+                            <button class="dt-button buttons-collection dropdown-toggle btn btn-label-primary me-2" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="dialog" aria-expanded="false"><span><i class="mdi mdi-export-variant me-sm-1"></i> <span class="d-none d-sm-inline-block">Export</span></span><span class="dt-down-arrow">▼</span></button>
+                            <a href="{{ route('hero.create') }}" class="btn btn-primary">
+    <span><i class="mdi mdi-plus me-sm-1"></i> <span class="d-none d-sm-inline-block">Add New Hero</span>
+</a>
+                        </div>
+                        </div>
+                    </div>
+                  <table class="datatables-hero table table-bordered" id="users-table">
+        <!-- <a href="{{route('hero.export.excel') }}" class="btn btn-success">Export to Excel</a>
+        <a href="{{route('hero.export.pdf') }}" class="btn btn-danger">Export to PDF</a>
+        <a href="{{route('hero.create') }}" class="btn btn-primary">Tambah Hero</a> -->
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>Judul</th>
+                    <th>Deskripsi</th>
+                    <th>Foto</th>
+                    <th>Urut</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
 
-                                                <button type="submit" class="dropdown-item">
-                                                    <i class="mdi mdi-trash-can-outline me-1"></i> Delete
-                                                </button>
-                                            </form>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                  </table>
-                </div>
-              </div>
-              <!--/ Striped Rows -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <script>
+        $(function() {
+            $('#users-table').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: '{!! route('hero.data') !!}',
+                columns: [
+                        {
+                            render: function (data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        },
+                        },
+                        {
+                        data: 'title'
+                        },
+                        {
+                        data: 'judul'
+                        },
+                        {
+                        data: 'deskripsi'
+                        },
+                        {
+                            render: function(data, type, row) {
+                                var imageSource = '{{ asset('') }}' + row.foto;
+                                return '<img src="' + imageSource + '" width="100" height="100" />';
+                            },
+                            orderable: false,
+                            searchable: false
+                        },
+                        {
+                        data: 'urut'
+                        },
+
+                ],
+                // dom: 'Bfrtip',
+            //     buttons: [
+            //     'copy', 'csv', 'excel', 'pdf', 'print'
+            // ]
+            });
+        });
+    </script>
 </x-app-layout>

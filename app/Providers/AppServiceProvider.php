@@ -7,6 +7,8 @@ use App\Models\Popup;
 use App\Models\Profil;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Yajra\DataTables\Html\Builder;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -27,6 +29,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        // Builder::useVite();
     }
 }

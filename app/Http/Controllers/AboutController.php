@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
+use App\DataTables\AboutDataTable;
 
 class AboutController extends Controller
 {
+    public function data()
+    {
+        return DataTables::of(About::query())->toJson();
+    }
     /**
      * Display a listing of the resource.
      *

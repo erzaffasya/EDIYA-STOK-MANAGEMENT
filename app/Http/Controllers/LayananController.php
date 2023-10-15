@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Layanan;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class LayananController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function data()
+    {
+        return DataTables::of(Layanan::query())->toJson();
+    }
     public function index()
     {
         $Layanan = Layanan::all();
