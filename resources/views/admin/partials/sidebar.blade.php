@@ -67,6 +67,14 @@
                 </ul>
             </li>
 
+
+            <li class="menu-item {{ Request::routeIs('daftar-kelas') ? 'active' : '' }}">
+                <a href="{{ route('daftar-kelas') }}" class="menu-link">
+                    <i class="menu-icon tf-icons mdi mdi-chart-donut"></i>
+                    <div data-i18n="Course">Course</div>
+                </a>
+            </li>
+
             <!-- Charts & Maps -->
             <li class="menu-item {{ Request::routeIs('admin.chart') ? 'active' : '' }}">
                 <a href="{{ route('admin.chart') }}" class="menu-link">

@@ -15,6 +15,8 @@
 <script src="{{ asset('tadmin/assets/vendor/libs/apex-charts/apexcharts.js') }}"></script>
 <script src="{{ asset('tadmin/assets/vendor/libs/swiper/swiper.js') }}"></script>
 <script src="{{ asset('tadmin/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}"></script>
+<script src="{{asset('tadmin/assets/vendor/libs/select2/select2.js')}}"></script>
+<script src="{{asset('tadmin/assets/vendor/libs/plyr/plyr.js')}}"></script>
 
 <!-- Main JS -->
 <script src="{{ asset('tadmin/assets/js/main.js') }}"></script>
@@ -35,3 +37,6 @@
 <script src="{{asset('tadmin/assets/js/tables-datatables-basic.js')}}"></script>
 
 <script src="/vendor/datatables/buttons.server-side.js"></script>
+
+
+<script src="{{ asset('tadmin/assets/js/app-academy-course.js') }}"></script>

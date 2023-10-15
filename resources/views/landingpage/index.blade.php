@@ -321,7 +321,7 @@
                             <div class="latest-post">
                                 <!-- Featured Image Starts -->
                                 <a class="img-thumb" href="{{ route('blog.show', $post->id) }}">
-                                    <img class="img-responsive" src="{{ asset($post->gambar) }}" alt="{{ $post->judul }}">
+                                    <img class="img-responsive" style="height: 350px" height="90px" src="{{ asset($post->gambar) }}" alt="{{ $post->judul }}">
                                 </a>
                                 <!-- Featured Image Ends -->
                                 <!-- Article Content Starts -->

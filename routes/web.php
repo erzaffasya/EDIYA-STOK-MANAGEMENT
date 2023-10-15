@@ -7,6 +7,7 @@ use App\Http\Controllers\BenefitController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogDetailController;
 use App\Http\Controllers\HeroController;
+use App\Http\Controllers\KelasController;
 use App\Http\Controllers\LandingpageController;
 use App\Http\Controllers\PilihanProgramController;
 use App\Http\Controllers\TestimonialController;
@@ -41,6 +42,8 @@ Route::get('/dashboard', function () {
 
 //make route for admin page
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+    Route::get('kelas', [KelasController::class, 'kelas'])->name('daftar-kelas');
+    Route::get('kelas-detail/{slug}', [KelasController::class, 'detailKelas'])->name('detail-kelas');
     Route::resource('hero', HeroController::class);
     Route::resource('about', AboutController::class);
     Route::resource('benefit', BenefitController::class);

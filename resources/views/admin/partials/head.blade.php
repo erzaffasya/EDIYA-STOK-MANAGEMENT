@@ -34,11 +34,11 @@
 <link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/typeahead-js/typeahead.css') }}" />
 <link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/apex-charts/apex-charts.css') }}" />
 <link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/swiper/swiper.css') }}" />
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/typeahead-js/typeahead.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
-<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/typeahead-js/typeahead.css')}}" />
-<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
-<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
+<!-- Vendors CSS -->
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/select2/select2.css') }}" />
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/plyr/plyr.css') }}" />
 
 
 <!-- Page CSS -->
@@ -53,13 +53,19 @@
 <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
 <script src="{{ asset('tadmin/assets/js/config.js') }}"></script>
 
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}">
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}">
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}">
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css')}}">
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css') }}">
+<link rel="stylesheet"
+    href="{{ asset('tadmin/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css') }}">
+<link rel="stylesheet"
+    href="{{ asset('tadmin/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css') }}">
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css') }}">
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/flatpickr/flatpickr.css') }}" />
 <!-- Row Group CSS -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css')}}">
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css') }}">
 <!-- Form Validation -->
-<link rel="stylesheet" href="{{asset('tadmin/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css')}}" />
+<link rel="stylesheet"
+    href="{{ asset('tadmin/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css') }}" />
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+
+<link rel="stylesheet" href="{{ asset('tadmin/assets/vendor/css/pages/app-academy.css') }}" />
+@stack('css')
