@@ -14,6 +14,7 @@
 <!-- Vendors JS -->
 <script src="{{ asset('tadmin/assets/vendor/libs/apex-charts/apexcharts.js') }}"></script>
 <script src="{{ asset('tadmin/assets/vendor/libs/swiper/swiper.js') }}"></script>
+<script src="{{ asset('tadmin/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}"></script>
 
 <!-- Main JS -->
 <script src="{{ asset('tadmin/assets/js/main.js') }}"></script>
@@ -22,3 +23,15 @@
 <!-- Page JS -->
 <script src="{{ asset('tadmin/assets/js/dashboards-analytics.js') }}"></script>
 
+<script src="{{asset('tadmin/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
+<!-- Flat Picker -->
+<script src="{{asset('tadmin/assets/vendor/libs/moment/moment.js')}}"></script>
+<script src="{{asset('tadmin/assets/vendor/libs/flatpickr/flatpickr.js')}}"></script>
+<!-- Form Validation -->
+<script src="{{asset('tadmin/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js')}}"></script>
+<script src="{{asset('tadmin/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js')}}"></script>
+<script src="{{asset('tadmin/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js')}}"></script>
+
+<script src="{{asset('tadmin/assets/js/tables-datatables-basic.js')}}"></script>
+
+<script src="/vendor/datatables/buttons.server-side.js"></script>

@@ -7,9 +7,22 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
+use Yajra\DataTables\Facades\DataTables;
+
+use Excel;
+use PDF;
+use App\DataTables\HeroDataTable;
+
+
 
 class HeroController extends Controller
 {
+
+    public function data()
+    {
+        return DataTables::of(Hero::query())->toJson();
+    }
+
     public function index()
     {
         $Hero = Hero::all();
@@ -113,5 +126,19 @@ class HeroController extends Controller
         $Hero->delete();
         return redirect()->route('hero.index')
             ->with('success', 'Hero Berhasil Dihapus');
+    }
+
+    public function exportExcel()
+    {
+        // DataTables::of(Hero::query())->toJson();
+        dd(DataTables::of(Hero::query()->toJson()));
+        return Excel::download(DataTables::of(Hero::query()->toJson()), 'hero_data.xlsx');
+    }
+
+    public function exportPdf(HeroDataTable $dataTable)
+    {
+        $pdf = PDF::loadView('pdf.hero', ['dataTable' => $dataTable]);
+
+        return $pdf->download('hero_data.pdf');
     }
 }

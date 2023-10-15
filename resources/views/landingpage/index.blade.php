@@ -359,7 +359,7 @@
                             @endforeach
                         </div>
                         <!-- Article Ends -->
-</div>
+                </div>
 
                 <!-- Latest Blog Posts Ends -->
             </div>
