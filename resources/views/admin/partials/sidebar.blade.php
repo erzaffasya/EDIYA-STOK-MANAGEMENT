@@ -76,8 +76,8 @@
             </li>
 
 
-            <li class="menu-item {{ Request::routeIs('daftar-kelas') ? 'active' : '' }}">
-                <a href="{{ route('daftar-kelas') }}" class="menu-link">
+            <li class="menu-item ">
+                <a href="#" class="menu-link">
                     <i class="menu-icon far fa-lightbulb"></i>
                     <div data-i18n="Rekomendasi Saham">Rekomendasi Saham</div>
                 </a>
