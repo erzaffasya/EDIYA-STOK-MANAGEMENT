@@ -70,15 +70,23 @@
 
             <li class="menu-item {{ Request::routeIs('daftar-kelas') ? 'active' : '' }}">
                 <a href="{{ route('daftar-kelas') }}" class="menu-link">
-                    <i class="menu-icon tf-icons mdi mdi-chart-donut"></i>
-                    <div data-i18n="Course">Course</div>
+                    <i class="menu-icon fas fa-book"></i>
+                    <div data-i18n="Course & Learning">Course & Learning</div>
+                </a>
+            </li>
+
+
+            <li class="menu-item {{ Request::routeIs('daftar-kelas') ? 'active' : '' }}">
+                <a href="{{ route('daftar-kelas') }}" class="menu-link">
+                    <i class="menu-icon far fa-lightbulb"></i>
+                    <div data-i18n="Rekomendasi Saham">Rekomendasi Saham</div>
                 </a>
             </li>
 
             <!-- Charts & Maps -->
             <li class="menu-item {{ Request::routeIs('admin.chart') ? 'active' : '' }}">
                 <a href="{{ route('admin.chart') }}" class="menu-link">
-                    <i class="menu-icon tf-icons mdi mdi-chart-donut"></i>
+                    <i class="menu-icon fas fa-chart-line"></i>
                     <div data-i18n="Charts">Charts</div>
                 </a>
             </li>
